@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #3e2723; /* Dark chocolate background */
+    color: #fff;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6),rgba(4,9,30,0.6)),url("coffee.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+.text-box {
+    width: 90%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.button:hover {
+    background-color: #e65100;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.videoContainer {
+    position: relative;
+    width: 720px;
+    height: 405px;
+    margin: auto;
+}
+
+.about, .video, .menu {
+    margin: 20px 0;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.about h2, .video h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.video video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.ourmenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu-item {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ff9800;
+}
+
+.menu-item-info {
+    padding: 15px;
+}
+
+.menu-item-info h3 {
+    margin: 10px 0;
+}
+
+.menu-item-info p {
+    margin: 5px 0;
+}
+.menu-title h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #ff9800;
+}
+
+footer {
+    background-color: #212121;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footers {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footers h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footers p {
+    margin: 5px 0;
+}
+
+
+
+
+
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #3e2723; /* Dark chocolate background 
+    color: #fff;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6),rgba(4,9,30,0.6)),url("coffee.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+.text-box{
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.button:hover {
+    background-color: #e65100;
+}
+
+main {
+    padding: 20px;
+}
+
+.about, .video, .menu {
+    margin: 20px 0;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+.about h2, .video h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.video video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ff9800;
+}
+
+.menu-item-info {
+    padding: 15px;
+}
+
+.menu-item-info h3 {
+    margin: 10px 0;
+}
+
+.menu-item-info p {
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #ff9800;
+}
+
+footer {
+    background-color: #212121;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+ */
